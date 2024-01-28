@@ -8,8 +8,8 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 550px);
-    padding-right: calc(50% - 550px);
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
 }
 
 .header {
@@ -54,6 +54,8 @@ a {
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
+        text-align: center;
+
     }
 }
 
@@ -67,6 +69,7 @@ a {
 }
 
 .header-start {
+    display: block;
     border-radius: 30px;
     border: none;
     background: #9C0332;
@@ -80,7 +83,14 @@ a {
     height: 48.603px;
     flex-shrink: 0;
     margin-top: 44px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+}
 
+a :hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 .game-box {
@@ -93,7 +103,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 23px;
+    gap: 32px;
 
 
     &-box {
@@ -105,6 +115,9 @@ a {
         position: relative;
         display: flex;
         height: 300px;
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+
 
     }
 

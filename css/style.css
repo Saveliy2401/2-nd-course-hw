@@ -8,8 +8,8 @@ a {
 }
 
 .center {
-  padding-left: calc(50% - 550px);
-  padding-right: calc(50% - 550px);
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
 }
 
 .header {
@@ -49,6 +49,7 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
+  text-align: center;
 }
 
 .special-text {
@@ -61,6 +62,7 @@ a {
 }
 
 .header-start {
+  display: block;
   border-radius: 30px;
   border: none;
   background: #9C0332;
@@ -74,6 +76,14 @@ a {
   height: 48.603px;
   flex-shrink: 0;
   margin-top: 44px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a :hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .game-box {
@@ -86,7 +96,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 23px;
+  gap: 32px;
 }
 .game-box {
   height: 556px;
@@ -96,6 +106,7 @@ a {
   position: relative;
   display: flex;
   height: 300px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .game__item {
   border-radius: 16px;
@@ -147,11 +158,11 @@ a {
     padding: 0;
   }
   .title .subtitle__text {
-    text-align: center;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     display: flex;
+    text-align: center;
   }
   .title .header-start {
     margin: 0;
