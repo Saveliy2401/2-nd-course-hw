@@ -1,7 +1,7 @@
 //первое задание//
 let password = prompt('Введите пароль');
 let true_password = '12345'
-if (password === true_password)
+if (password === true_password) 
     alert('Верный пароль');
 else {
     alert('Неверный пароль');
