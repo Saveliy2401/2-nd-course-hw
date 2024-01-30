@@ -59,6 +59,10 @@
         row-gap: 32px;
         column-gap: 16px;
 
+        &__cont {
+            height: auto;
+        }
+
         &-box {
             height: 1221px;
         }
@@ -66,6 +70,8 @@
         &__item {
             width: 343px;
         }
+
+
     }
 
 }
