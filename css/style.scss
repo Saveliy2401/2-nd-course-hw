@@ -20,6 +20,7 @@ a {
     height: 1024px;
 }
 
+
 .title {
     display: flex;
     max-width: 788.778px;
@@ -86,6 +87,11 @@ a {
     box-sizing: border-box;
     text-align: center;
     padding: 10px 0;
+}
+
+.header-start:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 a :hover {
