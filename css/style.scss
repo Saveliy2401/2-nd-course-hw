@@ -88,6 +88,10 @@ a {
     padding: 10px 0;
 }
 
+.header-start:hover {
+    background-color: orange;
+}
+
 .header-start {
     transform: scale(1.05);
     transition: all 0.3s;
