@@ -13,11 +13,13 @@ a {
 }
 
 .header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     background-image: url(./img/Rectangle\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 1024px;
+
 }
 
 .title {
@@ -68,8 +70,7 @@ a {
     line-height: 32px;
 }
 
-.header-start {
-    display: block;
+.start {
     border-radius: 30px;
     border: none;
     background: #9C0332;
@@ -83,21 +84,19 @@ a {
     height: 48.603px;
     flex-shrink: 0;
     margin-top: 44px;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px 0;
 }
 
-.header-start:hover {
+.start:hover {
     background-color: orange;
 }
 
-.header-start {
+.start {
     transform: scale(1.05);
     transition: all 0.3s;
 }
 
-a :hover {
+.game__cont:hover {
+
     transform: scale(1.05);
     transition: all 0.3s;
 }
@@ -143,6 +142,7 @@ a :hover {
         justify-content: center;
     }
 
+
     &__naming {
         left: 32px;
         position: absolute;
@@ -150,5 +150,46 @@ a :hover {
     }
 
 }
+
+.section {
+    background: #000915;
+
+}
+
+
+
+.seasons {
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 135px;
+
+    &__box {
+
+        width: 584px;
+        height: 225px;
+    }
+
+    &__textBig {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+}
+
+
+
 
 @import'_mobile'

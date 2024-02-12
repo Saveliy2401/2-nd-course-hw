@@ -38,7 +38,7 @@
             }
         }
 
-        .header-start {
+        .start {
             margin: 0;
             padding: 0;
         }
@@ -61,7 +61,7 @@
 
         &__cont {
             height: auto;
-        } 
+        }
 
         &-box {
             height: 1221px;
@@ -74,4 +74,36 @@
 
     }
 
+    .seasons__textBig {
+        width: 243px;
+        height: 39px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .seasons {
+        flex-wrap: wrap;
+
+        &__textBig {
+            width: 243px;
+            height: 39px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            width: 343px;
+            height: 66px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+
+    .imageGame {
+        width: 344px;
+        height: 236px;
+        top: 2288.6px;
+        left: 16px;
+    }
 }

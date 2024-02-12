@@ -29,6 +29,7 @@ a {
   flex-shrink: 0;
   padding-top: 217.1px;
 }
+
 .title__text {
   color: #FFF;
   font-family: Montserrat;
@@ -42,6 +43,7 @@ a {
   max-width: 481px;
   padding-top: 32px;
 }
+
 .subtitle__text {
   color: #FFF;
   font-family: Montserrat;
@@ -61,7 +63,7 @@ a {
   line-height: 32px;
 }
 
-.header-start {
+.start {
   display: block;
   border-radius: 30px;
   border: none;
@@ -98,19 +100,23 @@ a :hover {
   justify-content: center;
   gap: 32px;
 }
+
 .game-box {
   height: 556px;
   background: #000915;
 }
+
 .game__cont {
   position: relative;
   display: flex;
   height: 300px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
+
 .game__item {
   border-radius: 16px;
 }
+
 .game__naming {
   color: #FFF;
   font-family: Montserrat;
@@ -124,6 +130,7 @@ a :hover {
   flex-direction: column;
   justify-content: center;
 }
+
 .game__naming {
   left: 32px;
   position: absolute;
@@ -137,6 +144,7 @@ a :hover {
     align-items: center;
     row-gap: 32.9px;
   }
+
   .title {
     display: flex;
     width: 343px;
@@ -148,15 +156,18 @@ a :hover {
     margin: 0;
     padding-top: 238px;
   }
+
   .title__text {
     text-align: center;
     font-size: 32px;
     font-weight: 700;
   }
+
   .title .subtitle {
     margin: 0;
     padding: 0;
   }
+
   .title .subtitle__text {
     font-size: 14px;
     font-weight: 300;
@@ -164,28 +175,36 @@ a :hover {
     display: flex;
     text-align: center;
   }
-  .title .header-start {
+
+  .title .start {
     margin: 0;
     padding: 0;
   }
+
   .title special-text {
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
     text-align: center;
   }
+
   .header {
     height: 735px;
   }
+
   .game {
     row-gap: 32px;
     -moz-column-gap: 16px;
-         column-gap: 16px;
+    column-gap: 16px;
   }
+
   .game-box {
     height: 1221px;
   }
+
   .game__item {
     width: 343px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
