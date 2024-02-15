@@ -15,18 +15,19 @@ console.log(`${result}`);
 console.log("задание 2");
 
 let n = (prompt('Введите число'));
-if (n % 2 == 0) {
-    console.log(`Число чётное`);
-    alert('Число чётное')
-
-} else {
-    console.log(`Число нечётное`);
-    alert('Число нечётное')
-
+function evenNumber() {
+    if (n % 2 == 0) {
+        alert('Число чётное');
+    }
+    else {
+        alert('Число нечётное');
+    }
 }
+evenNumber();
 
 
 //задание 3.1//
+console.log("задание 3.1");
 function num(i) {
     i ** 2
 }
@@ -34,6 +35,7 @@ console.log(num(10))
 
 
 //задание 3.2//
+console.log("задание 3.2");
 function num(i) {
     return (i ** 2);
 }
@@ -42,20 +44,13 @@ alert(num(10))
 
 //задание 4//
 let age = Number(prompt('Сколько вам лет?'));
-
-if (age < 12) {
-    function printMessage() {
-
+function printMessage() {
+    if (age < 12) {
         alert('Привет, друг!');
     }
-}
-else {
-    function printMessage() {
+    else {
         alert('Добро пожаловать!');
-
-    }
-} if (age <= 0) {
-    function printMessage() {
+    } if (age <= 0) {
         alert('Вы ввели неправильное значение');
     }
 }
@@ -119,3 +114,5 @@ console.log(circle1.getPerimeter().toFixed(2));
 
 console.log(circle2.getArea().toFixed(2));
 console.log(circle2.getPerimeter().toFixed(2));
+
+
