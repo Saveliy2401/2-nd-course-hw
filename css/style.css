@@ -14,7 +14,7 @@ a {
 
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
-  background-image: url(./img/Rectangle\ 1.jpg);
+  background-image: url(../img/Rectangle\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -104,12 +104,10 @@ a {
   justify-content: center;
   gap: 32px;
 }
-
 .game-box {
   height: 556px;
   background: #000915;
 }
-
 .game__cont {
   position: relative;
   display: flex;
@@ -206,7 +204,7 @@ a {
     margin: 0;
     padding: 0;
   }
-  special-text {
+  .special-text {
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
