@@ -8,8 +8,8 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
 }
 
 .header {
@@ -22,13 +22,13 @@ a {
 
 .title {
     display: flex;
-    width: 788.778px;
-    height: 125.007px;
+    max-width: 788.778px;
+    max-height: 125.007px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     padding-top: 217.1px;
-    margin-left: 122px;
+
 
     &__text {
         color: #FFF;
@@ -43,9 +43,9 @@ a {
 
 
 .subtitle {
-    width: 481px;
+    max-width: 481px;
     padding-top: 32px;
-    margin-left: 122px;
+
 
     &__text {
         color: #FFF;
@@ -54,6 +54,8 @@ a {
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
+        text-align: center;
+
     }
 }
 
@@ -67,6 +69,7 @@ a {
 }
 
 .header-start {
+    display: block;
     border-radius: 30px;
     border: none;
     background: #9C0332;
@@ -80,7 +83,23 @@ a {
     height: 48.603px;
     flex-shrink: 0;
     margin-top: 44px;
-    margin-left: 122px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-start:hover {
+    background-color: orange;
+}
+
+.header-start {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+a :hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 .game-box {
@@ -91,8 +110,9 @@ a {
 .game {
     padding-top: 128px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 23px;
+    gap: 32px;
 
 
     &-box {
@@ -104,13 +124,9 @@ a {
         position: relative;
         display: flex;
         height: 300px;
-
-    }
-
-    &__item {
-        border-radius: 16px;
-
-
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        border-radius: 24px;
+        overflow: hidden;
     }
 
     &__naming {
@@ -134,3 +150,5 @@ a {
     }
 
 }
+
+@import'_mobile'
