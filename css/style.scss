@@ -20,6 +20,7 @@ a {
     height: 1024px;
 }
 
+
 .title {
     display: flex;
     max-width: 788.778px;
@@ -90,14 +91,11 @@ a {
 
 .header-start:hover {
     background-color: orange;
-}
-
-.header-start {
     transform: scale(1.05);
     transition: all 0.3s;
 }
 
-a :hover {
+a:hover {
     transform: scale(1.05);
     transition: all 0.3s;
 }
@@ -151,4 +149,4 @@ a :hover {
 
 }
 
-@import'_mobile'
+@import 'mobile';
