@@ -1,5 +1,5 @@
 function startGameWeather() {
-    let ans = Number(prompt("Введите число"));
+    let quo = Number(prompt("Введите число"));
     const Season = (month) => {
         if (month === 12 || month === 1 || month === 2) {
             return "Зима";
@@ -17,5 +17,4 @@ function startGameWeather() {
     let ans = Season(quo);
     alert(ans);
 };
-startGameWeather()
-
+//startGameWeather()
