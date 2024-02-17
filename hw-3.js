@@ -1,14 +1,15 @@
 //первое задание//
-let password = String(prompt('Введите пароль'));
-if (password === '12345') {
-    alert('Верный пароль')
-} else {
-    alert('Не верный пароль')
+let password = prompt('Введите пароль');
+let true_password = '12345'
+if (password === true_password) 
+    alert('Верный пароль');
+else {
+    alert('Неверный пароль');
 }
 
 //второе задание//
-let C = Number(prompt('введите любое число'));
-if (C > 0 && C < 10) {
+let c = Number(prompt('введите любое число'));
+if (c > 0 && c < 10) {
     alert('Верно')
 
 } else {
