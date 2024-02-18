@@ -4,7 +4,7 @@ console.log("задание 1");
 function min(a, b) {
     if (a < b) {
         return a;
-    } else (a > b); {
+    } else; {
         return b;
     }
 }
@@ -17,10 +17,10 @@ console.log("задание 2");
 let n = (prompt('Введите число'));
 function evenNumber() {
     if (n % 2 == 0) {
-        alert('Число чётное');
+        return ('Число чётное');
     }
     else {
-        alert('Число нечётное');
+        return ('Число нечётное');
     }
 }
 evenNumber();
