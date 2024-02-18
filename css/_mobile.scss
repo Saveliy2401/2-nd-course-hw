@@ -24,32 +24,32 @@
             font-weight: 700;
 
         }
+    }
 
-        .subtitle {
-            margin: 0;
-            padding: 0;
+    .subtitle {
+        margin: 0;
+        padding: 0;
 
-            &__text {
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 22px;
-                display: flex;
-                text-align: center;
-            }
-        }
-
-        .header-start {
-            margin: 0;
-            padding: 0;
-        }
-
-        special-text {
+        &__text {
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 300;
             line-height: 22px;
             text-align: center;
         }
     }
+
+    .header-start {
+        margin: 0;
+        padding: 0;
+    }
+
+    .special-text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+    }
+
 
     .header {
         height: 735px;
@@ -61,7 +61,7 @@
 
         &__cont {
             height: auto;
-        } 
+        }
 
         &-box {
             height: 1221px;
@@ -70,8 +70,38 @@
         &__item {
             width: 343px;
         }
-
-
     }
 
+    .seasons {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__box {
+            row-gap: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32.9px;
+        }
+
+        &__textBig {
+            text-align: center;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+
+    .imageGame {
+        width: 344px;
+        height: 236px;
+        margin-top: 62px;
+
+    }
 }

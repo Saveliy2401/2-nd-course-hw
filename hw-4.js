@@ -41,6 +41,7 @@ for (let n = 1000, num = 0; n > 50; num++) {
     alert(n);
 }
 //задание 6//
+
 let k = Number(prompt('какая дата у первой пятницы месяца?'));
 let friday = k;
 do {
@@ -48,3 +49,4 @@ do {
     friday = friday + 7;
     friday++;
 } while (friday <= 31);
+

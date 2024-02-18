@@ -13,7 +13,7 @@ a {
 }
 
 .header {
-  background-image: url(./img/Rectangle\ 1.jpg);
+  background-image: url(../img/Rectangle\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,8 +61,7 @@ a {
   line-height: 32px;
 }
 
-.header-start {
-  display: block;
+.start {
   border-radius: 30px;
   border: none;
   background: #9C0332;
@@ -76,12 +75,10 @@ a {
   height: 48.603px;
   flex-shrink: 0;
   margin-top: 44px;
-  box-sizing: border-box;
-  text-align: center;
-  padding: 10px 0;
 }
 
-a :hover {
+.start:hover {
+  background-color: rgb(228, 149, 2);
   transform: scale(1.05);
   transition: all 0.3s;
 }
@@ -102,14 +99,16 @@ a :hover {
   height: 556px;
   background: #000915;
 }
+.game__cont:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
 .game__cont {
   position: relative;
   display: flex;
   height: 300px;
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
-}
-.game__item {
-  border-radius: 16px;
+  border-radius: 24px;
+  overflow: hidden;
 }
 .game__naming {
   color: #FFF;
@@ -128,6 +127,38 @@ a :hover {
   left: 32px;
   position: absolute;
   bottom: 32px;
+}
+
+.section {
+  background: #000915;
+}
+
+.seasons {
+  background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.seasons__box {
+  width: 584px;
+  height: 225px;
+}
+.seasons__textBig {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.seasons__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 @media (max-width: 550px) {
@@ -153,22 +184,21 @@ a :hover {
     font-size: 32px;
     font-weight: 700;
   }
-  .title .subtitle {
+  .subtitle {
     margin: 0;
     padding: 0;
   }
-  .title .subtitle__text {
+  .subtitle__text {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    display: flex;
     text-align: center;
   }
-  .title .header-start {
+  .header-start {
     margin: 0;
     padding: 0;
   }
-  .title special-text {
+  .special-text {
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
@@ -182,10 +212,39 @@ a :hover {
     -moz-column-gap: 16px;
          column-gap: 16px;
   }
+  .game__cont {
+    height: auto;
+  }
   .game-box {
     height: 1221px;
   }
   .game__item {
     width: 343px;
+  }
+  .seasons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .seasons__box {
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32.9px;
+  }
+  .seasons__textBig {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .imageGame {
+    width: 344px;
+    height: 236px;
+    margin-top: 62px;
   }
 }/*# sourceMappingURL=style.css.map */
