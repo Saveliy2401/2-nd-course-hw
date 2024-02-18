@@ -64,7 +64,7 @@ let x = prompt('введите число X')
 let y = prompt('введите число Y')
 function abuse(x, y) {
     if (isNaN(x && y)) {
-        console.log('Переданный параметр не является числом')
+        return ('Переданный параметр не является числом')
     } else {
         return (x * y);
     }
@@ -78,7 +78,7 @@ console.log("задание 6");
 let enterNumber = prompt('введите число')
 function messageUser(enterNumber) {
     if (isNaN(enterNumber)) {
-        console.log('Переданный параметр не является числом')
+        return ('Переданный параметр не является числом')
     } else {
         return (enterNumber ** 3);
     }
