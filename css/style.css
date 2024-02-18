@@ -83,11 +83,6 @@ a {
   transition: all 0.3s;
 }
 
-.game__cont:hover {
-  transform: scale(1.05);
-  transition: all 0.3s;
-}
-
 .game-box {
   background: #000915;
   height: 556px;
@@ -103,6 +98,10 @@ a {
 .game-box {
   height: 556px;
   background: #000915;
+}
+.game__cont:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 .game__cont {
   position: relative;
