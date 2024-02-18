@@ -74,6 +74,7 @@
 
     .seasons {
         flex-wrap: wrap;
+        justify-content: center;
 
         &__box {
             row-gap: 32px;
@@ -100,6 +101,7 @@
     .imageGame {
         width: 344px;
         height: 236px;
+        margin-top: 62px;
 
     }
 }

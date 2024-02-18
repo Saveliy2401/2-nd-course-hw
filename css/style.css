@@ -227,6 +227,7 @@ a {
   }
   .seasons {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .seasons__box {
     row-gap: 32px;
@@ -248,5 +249,6 @@ a {
   .imageGame {
     width: 344px;
     height: 236px;
+    margin-top: 62px;
   }
 }/*# sourceMappingURL=style.css.map */
