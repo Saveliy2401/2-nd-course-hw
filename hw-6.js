@@ -9,12 +9,13 @@ while (i < array.length) {
     console.log(array[i]);
     i++
 }
+//я не понимаю как изменить
 
 
 
 console.log("задание 2");
 
-let num = ['1', '5', '4', '10', '0', '3'];
+let num = [1, 5, 4, 0, 0, 3];
 console.log(
     num.indexOf('4')
 )
@@ -22,7 +23,7 @@ console.log(
 
 console.log("задание 3");
 
-let union = ['1', '3', '5', '10', '20'];
+let union = [1, 3, 5, 10, 20];
 union = union.join(' ');
 console.log(union);
 
@@ -41,16 +42,16 @@ console.log(arr);
 
 console.log("задание 5");
 
-let x = ['1', '1', '1'];
+let x = [1, 1, 1];
 x.push(2, 2, 2);
 console.log(x);
 
 
 console.log("задание 6");
 let z = [9, 8, 7, 'a', 6, 5];
-z = z.sort();
-console.log(z.pop());
-console.log(z);
+z_2 = z.sort();
+
+console.log(z_2);
 
 
 console.log("задание 7");
@@ -61,7 +62,10 @@ if (numbers.includes(input)) {
     alert(`угадал`);
 } else {
     alert(`не угадал`);
+} if (input === null) {
+    console.log(`ничего не выбрано`)
 }
+
 
 console.log("задание 8");
 
@@ -72,10 +76,8 @@ word = word.join('')
 console.log(word);
 
 console.log("задание 9");
-
-let arr_1 = [1, 2, 3];
-let arr_2 = [4, 5, 6];
-let res = arr_1.concat(arr_2);
+let arr_1 = [[1, 2, 3], [4, 5, 6]]
+let res = arr_1.flat();
 console.log(res);
 
 console.log("задание 10");
@@ -84,19 +86,20 @@ let arr10 = [9, 8, 1, 7, 2, 6, 5, 4, 3, 10];
 
 let sum10_1;
 for (let i = 0; i < arr10.length - 1; i++) {
-    console.log((sum10_1 = arr10[i] + arr10[i + 1]));
+    (sum10_1 = arr10[i] + arr10[i + 1])
+    console.log(sum10_1);
 }
 
-const sum10_2 = (a, b) => {
-    let result = a + b;
-    return result;
-};
+
 
 console.log("задание 11");
-
-let n = [10, 20, 30];
-let y = n.map(n => (n * n));
-console.log(y);
+function kvadrat() {
+    var input = prompt("Введите элементы массива через запятую");
+    n = input.split(",");
+    let y = n.map(n => (n * n));
+    console.log(y);
+}
+kvadrat()
 
 console.log("задание 12");
 
@@ -111,12 +114,13 @@ console.log(getLengthWords(arr12));
 console.log("задание 13");
 
 function filterPositive(array) {
-    let negativeArr = [];
+    let nigativeArr = [];
     for (const value of array) {
-        if (value < 0) negativeArr.push(value);
+        if (value < 0) nigativeArr.push(value);
     };
-    return negativeArr;
+    return nigativeArr;
 }
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
 console.log(filterPositive([-25, 25, 0, -1000, -2]));
+//здесь тоже не понимаю. я пытался, честно
