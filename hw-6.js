@@ -1,24 +1,16 @@
 console.log("задание 1");
-
-const array = [1, 5, 4, 10, 0, 3];
-let i = 0;
-while (i < array.length) {
-    if (i === 10) {
-        break
+const numb = [1, 5, 4, 10, 0, 3];
+for (b of numb) {
+    console.log(b);
+    if (b === 10) {
+        break;
     }
-    console.log(array[i]);
-    i++
 }
-//я не понимаю как изменить
-
-
 
 console.log("задание 2");
-
 let num = [1, 5, 4, 0, 0, 3];
 console.log(
-    num.indexOf('4')
-)
+    num.indexOf('4'));
 
 
 console.log("задание 3");
@@ -48,25 +40,23 @@ console.log(x);
 
 
 console.log("задание 6");
-let z = [9, 8, 7, 'a', 6, 5];
-z_2 = z.sort();
-
-console.log(z_2);
+const n = [9, 8, 7, 'a', 6, 5];
+n.sort()
+n.pop();
+console.log(n);
 
 
 console.log("задание 7");
 
-const numbers = [9, 8, 7, 6, 5];
-let input = Number(prompt(`Введите число`));
-if (numbers.includes(input)) {
-    alert(`угадал`);
-} else {
-    alert(`не угадал`);
-} if (input === null) {
-    console.log(`ничего не выбрано`)
+const puzzle = [9, 8, 7, 6, 5];
+for (answ of puzzle) {
+    answ = +prompt("угадай число")
+    if (isNaN(answ) || answ >= 5 || answ <= 9) {
+        alert("угадал");
+        break;
+    } else (
+        alert("не угадал"))
 }
-//я пытался сделать так, чтоб при отсутствии текста что-то другое выдавал выдавал.но он не хочет
-//подскажи пожалуйста, как это сделать?
 
 console.log("задание 8");
 
@@ -87,20 +77,16 @@ let arr10 = [9, 8, 1, 7, 2, 6, 5, 4, 3, 10];
 
 let sum10_1;
 for (let i = 0; i < arr10.length - 1; i++) {
-    (sum10_1 = arr10[i] + arr10[i + 1])
+    sum10_1 = arr10[i] + arr10[i + 1]
     console.log(sum10_1);
 }
 
 
 
 console.log("задание 11");
-function kvadrat() {
-    var input = prompt("Введите элементы массива через запятую");
-    n = input.split(",");
-    let y = n.map(n => (n * n));
-    console.log(y);
-}
-kvadrat()
+const numbi = [7, 15, 2, 35, 3];
+let = perfSquare = numbi.map(cc => (cc ** 2))
+console.log(perfSquare);
 
 console.log("задание 12");
 
@@ -115,13 +101,8 @@ console.log(getLengthWords(arr12));
 console.log("задание 13");
 
 function filterPositive(array) {
-    let nigativeArr = [];
-    for (const value of array) {
-        if (value < 0) nigativeArr.push(value);
-    };
-    return nigativeArr;
+    return array.filter(number => number < 0);
 }
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
-console.log(filterPositive([-25, 25, 0, -1000, -2]));
-//здесь тоже не понимаю. я пытался, честно
+console.log(filterPositive([-25, 25, 0, -1000, -2])); 
