@@ -84,10 +84,10 @@ for (let i = 0; i < arr10.length - 1; i++) {
 
 
 console.log("задание 11");
-const numbi = [7, 15, 2, 35, 3];
-let = perfSquare = numbi.map(cc => (cc ** 2))
-console.log(perfSquare);
+let numbi = [7, 15, 2, 35, 3]
+let perfSquare = numbi.map((numbi) => numbi ** 2);
 
+console.log(perfSquare);
 console.log("задание 12");
 
 const arr12 = ["слово", "", "слог", "длинное предложение", "буква"];
