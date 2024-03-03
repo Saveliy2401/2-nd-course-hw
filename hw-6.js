@@ -84,18 +84,10 @@ for (let i = 0; i < arr10.length - 1; i++) {
 
 
 console.log("задание 11");
-/*const  = [];
-
-let  = arr.map(function () {
-    numbi.map(cc => (cc ** 2))
-    return numbi.map
-})
-
-console.log(perfSquare)*/
 let numbi = [7, 15, 2, 35, 3]
 let perfSquare = numbi.map((numbi) => numbi ** 2);
 
-console.log(perfSquare)
+console.log(perfSquare);
 
 
 
