@@ -54,7 +54,6 @@ a {
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
-        text-align: center;
 
     }
 }
@@ -65,7 +64,7 @@ a {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: normal;
 }
 
 .start {
@@ -85,73 +84,72 @@ a {
 }
 
 .start:hover {
-    background-color: rgb(228, 149, 2);
+    background-color: rgb(255, 191, 0);
     transform: scale(1.05);
     transition: all 0.3s;
 }
 
-.game-box {
+.title-games-box {
     background: #000915;
-    height: 556px;
+    height: auto;
 }
 
-.game {
+.title-games {
     padding-top: 128px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-
-
-    &-box {
-        height: 556px;
-        background: #000915;
-    }
-
-    &__cont:hover {
-        transform: scale(1.05);
-        transition: all 0.3s;
-    }
-
-    &__cont {
-        position: relative;
-        display: flex;
-        height: 300px;
-        border-radius: 24px;
-        overflow: hidden;
-    }
-
-    &__naming {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px;
-        display: flex;
-        width: 84px;
-        height: 31.639px;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-    &__naming {
-        left: 32px;
-        position: absolute;
-        bottom: 32px;
-    }
-
 }
 
-.section {
+
+.title-games__cont:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.title-games__cont {
+    position: relative;
+    display: flex;
+    height: 300px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.title-games__naming {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    width: 84px;
+    height: 31.639px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title-games__naming {
+    left: 32px;
+    position: absolute;
+    bottom: 32px;
+}
+
+
+
+.sectionGame {
     background: #000915;
+    height: 800px;
+    display: flex;
+    align-items: center;
 
 }
 
 
 
-.seasons {
+.game {
     background: #000915;
     display: flex;
     flex-wrap: wrap;
@@ -159,8 +157,8 @@ a {
 
     &__box {
 
-        width: 584px;
-        height: 225px;
+        height: auto;
+        width: 588px;
     }
 
     &__textBig {

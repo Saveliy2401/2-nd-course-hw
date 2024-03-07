@@ -17,4 +17,30 @@ function startGameWeather() {
     let ans = Season(quo);
     alert(ans);
 };
-//startGameWeather()
+
+function gameFruties() {
+    let fruties = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    fruties = fruties.sort(() => Math.random() - 0.5);
+    alert(`Запомни слова: ${fruties}`);
+
+    let frutiesOne = prompt(`Какой фрукт был первый ?`);
+
+    let frutiesTwo = prompt(`Какой фрукт был последний ?`);
+
+
+
+
+    if (frutiesOne.toLowerCase() === fruties.indexOf[0] && frutiesTwo.toLowerCase() === fruties.indexOf[6]) {
+        alert(`Угадал`)
+
+    } else if (
+        frutiesOne !== fruties.indexOf[0] ||
+        frutiesTwo !== fruties.indexOf[6]) {
+        alert(`Не угадал`);
+
+    } else {
+        alert(`Вы были близки к победе!`);
+    }
+}
+
