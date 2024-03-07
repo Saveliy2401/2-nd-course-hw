@@ -3,15 +3,11 @@ let text = ('js');
 console.log(text.toUpperCase());
 
 console.log("задание 2")
-const animals = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
-
-animals.forEach((animal) => {
-
-    if (animal.toLowerCase().startsWith(search.toLowerCase())) {
-        console.log(animal);
-    }
-});
+const searchStart_2 = (arrWords, search) => {
+    return arrWords.filter(word => word.toLowerCase().includes(search.toLowerCase()));
+}
+console.log(searchStart_2(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart_2(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
 
 console.log("задание 3");
 console.log(Math.floor(32.58884));

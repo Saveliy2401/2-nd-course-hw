@@ -19,28 +19,23 @@ function startGameWeather() {
 };
 
 function gameFruties() {
-    let fruties = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-    fruties = fruties.sort(() => Math.random() - 0.5);
-    alert(`Запомни слова: ${fruties}`);
+    const shuffle = (array) => array.sort(() => Math.random() - 0.5)
+    alert(shuffle(words));
 
-    let frutiesOne = prompt(`Какой фрукт был первый ?`);
+    let answer1 = String(prompt("Введите первое слово"));
 
-    let frutiesTwo = prompt(`Какой фрукт был последний ?`);
+    let answer2 = String(prompt("Введите второе слово"));
 
+    if (answer1.toLocaleLowerCase().trim() === words[0].toLocaleLowerCase() &&
+        answer2.toLocaleLowerCase().trim() === words[words.length - 1].toLocaleLowerCase())
+        alert("Поздравляю, Вы угадали оба слова");
 
+    else if (answer1.toLocaleLowerCase().trim() === words[0].toLocaleLowerCase() ||
+        answer2.toLocaleLowerCase().trim() === words[words.length - 1].toLocaleLowerCase())
+        alert("Вы были близки к победе!");
 
-
-    if (frutiesOne.toLowerCase() === fruties.indexOf[0] && frutiesTwo.toLowerCase() === fruties.indexOf[6]) {
-        alert(`Угадал`)
-
-    } else if (
-        frutiesOne !== fruties.indexOf[0] ||
-        frutiesTwo !== fruties.indexOf[6]) {
-        alert(`Не угадал`);
-
-    } else {
-        alert(`Вы были близки к победе!`);
-    }
-}
-
+    else
+        alert("Вы ответили неверно!");
+} 
