@@ -17,4 +17,25 @@ function startGameWeather() {
     let ans = Season(quo);
     alert(ans);
 };
-//startGameWeather()
+
+function gameFruties() {
+    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    const shuffle = (array) => array.sort(() => Math.random() - 0.5)
+    alert(shuffle(words));
+
+    let answer1 = String(prompt("Введите первое слово"));
+
+    let answer2 = String(prompt("Введите второе слово"));
+
+    if (answer1.toLocaleLowerCase().trim() === words[0].toLocaleLowerCase() &&
+        answer2.toLocaleLowerCase().trim() === words[words.length - 1].toLocaleLowerCase())
+        alert("Поздравляю, Вы угадали оба слова");
+
+    else if (answer1.toLocaleLowerCase().trim() === words[0].toLocaleLowerCase() ||
+        answer2.toLocaleLowerCase().trim() === words[words.length - 1].toLocaleLowerCase())
+        alert("Вы были близки к победе!");
+
+    else
+        alert("Вы ответили неверно!");
+} 

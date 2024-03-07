@@ -49,7 +49,6 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-  text-align: center;
 }
 
 .special-text {
@@ -58,7 +57,7 @@ a {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
+  line-height: normal;
 }
 
 .start {
@@ -78,39 +77,38 @@ a {
 }
 
 .start:hover {
-  background-color: rgb(228, 149, 2);
+  background-color: rgb(255, 191, 0);
   transform: scale(1.05);
   transition: all 0.3s;
 }
 
-.game-box {
+.title-games-box {
   background: #000915;
-  height: 556px;
+  height: auto;
 }
 
-.game {
+.title-games {
   padding-top: 128px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
 }
-.game-box {
-  height: 556px;
-  background: #000915;
-}
-.game__cont:hover {
+
+.title-games__cont:hover {
   transform: scale(1.05);
   transition: all 0.3s;
 }
-.game__cont {
+
+.title-games__cont {
   position: relative;
   display: flex;
   height: 300px;
   border-radius: 24px;
   overflow: hidden;
 }
-.game__naming {
+
+.title-games__naming {
   color: #FFF;
   font-family: Montserrat;
   font-size: 24px;
@@ -123,28 +121,32 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.game__naming {
+
+.title-games__naming {
   left: 32px;
   position: absolute;
   bottom: 32px;
 }
 
-.section {
+.sectionGame {
   background: #000915;
+  height: 800px;
+  display: flex;
+  align-items: center;
 }
 
-.seasons {
+.game {
   background: #000915;
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 135px;
        column-gap: 135px;
 }
-.seasons__box {
-  width: 584px;
-  height: 225px;
+.game__box {
+  height: auto;
+  width: 588px;
 }
-.seasons__textBig {
+.game__textBig {
   color: #FFF;
   font-family: Montserrat;
   font-size: 48px;
@@ -152,7 +154,7 @@ a {
   font-weight: 700;
   line-height: normal;
 }
-.seasons__text {
+.game__text {
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -207,40 +209,41 @@ a {
   .header {
     height: 735px;
   }
-  .game {
+  .games {
     row-gap: 32px;
     -moz-column-gap: 16px;
          column-gap: 16px;
   }
-  .game__cont {
+  .games__cont {
     height: auto;
   }
-  .game-box {
+  .games-box {
     height: 1221px;
   }
-  .game__item {
+  .games__item {
     width: 343px;
   }
-  .seasons {
+  .game {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .seasons__box {
+  .game__box {
     row-gap: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 32.9px;
+    width: 343px;
   }
-  .seasons__textBig {
+  .game__textBig {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
   }
-  .seasons__text {
-    text-align: center;
+  .game__text {
     font-size: 14px;
     line-height: 22px;
+    text-align: center;
   }
   .imageGame {
     width: 344px;
