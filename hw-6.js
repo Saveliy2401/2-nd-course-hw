@@ -84,9 +84,10 @@ for (let i = 0; i < arr10.length - 1; i++) {
 
 
 console.log("задание 11");
-const arr_11 = [1, 2, 3, 4];
+const arr_11 = [7, 15, 2, 35, 3];
 const square_arr = (arr) => arr.map(el => el ** 2);
 console.log(square_arr(arr_11));
+
 console.log("задание 12");
 
 const arr12 = ["слово", "", "слог", "длинное предложение", "буква"];
